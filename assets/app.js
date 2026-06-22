@@ -64,7 +64,7 @@ if(cform){
         setNote('✕ Something went wrong: '+(data.message||'please try again or email us directly.'),'#ff9d6e');
       }
     }catch(err){
-      setNote('✕ Network error — please email rnd.proitbridge@gmail.com directly.','#ff9d6e');
+      setNote('✕ Network error — please email info.zenhubautomation@gmail.com directly.','#ff9d6e');
     }finally{
       btn.textContent=original; btn.disabled=false;
     }
