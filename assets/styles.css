@@ -90,7 +90,7 @@ nav.scrolled{background:rgba(6,6,14,.72);backdrop-filter:blur(16px);border-botto
 .logo-mark{width:34px;height:34px;border-radius:10px;display:block;transition:transform .55s var(--ease)}
 .logo:hover .logo-mark{transform:rotate(180deg)}
 /* brand logo images */
-.logo-img{height:90px;width:auto;display:block;transition:height .4s var(--ease),filter .3s}
+.logo-img{height:75px;width:auto;display:block;transition:height .4s var(--ease),filter .3s}
 .logo:hover .logo-img{filter:drop-shadow(0 4px 18px rgba(45,198,222,.45))}
 nav.scrolled .logo-img{height:46px}
 .foot-brand .logo-img{height:72px;margin-bottom:8px}
