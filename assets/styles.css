@@ -64,7 +64,7 @@ h1,h2,h3,h4,h5,
   background:radial-gradient(circle,rgba(45,198,222,.22),transparent 62%);filter:blur(30px)}
 .intro.done{transform:translateY(-102%);opacity:0;pointer-events:none}
 .intro-inner{position:relative;text-align:center;padding:0 24px}
-.intro-mark{width:62px;height:62px;margin:0 auto 30px;display:block;filter:drop-shadow(0 8px 30px rgba(45,198,222,.5));
+.intro-mark{width:min(460px,76vw);height:auto;margin:0 auto 34px;display:block;filter:drop-shadow(0 10px 36px rgba(45,198,222,.4));
   animation:introPop .9s var(--ease) both}
 @keyframes introPop{from{opacity:0;transform:scale(.6) rotate(-18deg)}to{opacity:1;transform:none}}
 .intro-type{font-family:'Plus Jakarta Sans';font-weight:800;letter-spacing:-.02em;
@@ -90,12 +90,12 @@ nav.scrolled{background:rgba(6,6,14,.72);backdrop-filter:blur(16px);border-botto
 .logo-mark{width:34px;height:34px;border-radius:10px;display:block;transition:transform .55s var(--ease)}
 .logo:hover .logo-mark{transform:rotate(180deg)}
 /* brand logo images */
-.logo-img{height:40px;width:auto;display:block;transition:height .4s var(--ease),filter .3s}
+.logo-img{height:90px;width:auto;display:block;transition:height .4s var(--ease),filter .3s}
 .logo:hover .logo-img{filter:drop-shadow(0 4px 18px rgba(45,198,222,.45))}
-nav.scrolled .logo-img{height:34px}
-.foot-brand .logo-img{height:50px;margin-bottom:6px}
-img.intro-mark{object-fit:contain;border-radius:18px;background:#000}
-@media(max-width:560px){.logo-img{height:34px}}
+nav.scrolled .logo-img{height:46px}
+.foot-brand .logo-img{height:72px;margin-bottom:8px}
+img.intro-mark{object-fit:contain}
+@media(max-width:560px){.logo-img{height:44px}}
 .nav-links{display:flex;gap:30px;align-items:center}
 .nav-links a{font-size:.92rem;color:var(--muted);transition:color .25s;position:relative}
 .nav-links a:hover,.nav-links a.active{color:var(--ink)}
