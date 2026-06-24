@@ -452,3 +452,101 @@ footer{border-top:1px solid var(--line);padding:70px 0 36px}
   .float-ic{animation:none}
 }
 @media(prefers-reduced-motion:reduce){.float-ic{animation:none}}
+
+/* ============================================================
+   RESPONSIVE / MOBILE POLISH
+   ============================================================ */
+
+/* tablet: scale down the big nav logo */
+@media(max-width:880px){
+  .logo-img{height:50px}
+  nav.scrolled .logo-img{height:42px}
+  .foot-brand .logo-img{height:60px}
+}
+
+/* phones / small tablets */
+@media(max-width:768px){
+  .wrap{padding:0 20px}
+  .section-pad{padding:64px 0}
+
+  /* hero */
+  .hero{padding:138px 0 64px}
+  h1.hero-title{font-size:clamp(2rem,8.4vw,3.3rem);line-height:1.1}
+  .hero-sub{font-size:1.02rem;line-height:1.6;margin:20px auto 28px}
+  .hero-rating{margin-top:34px}
+  .hero-actions{gap:12px;width:100%}
+  .hero-actions .btn{flex:1 1 100%;justify-content:center}
+
+  /* section headings */
+  h2.section-title{font-size:clamp(1.7rem,6.8vw,2.4rem);margin:16px 0}
+  .lead{font-size:1rem}
+  .sec-head{margin-bottom:6px}
+
+  /* page header (sub-pages) */
+  .page-head{padding:128px 0 8px}
+  .page-head h1{font-size:clamp(2rem,8.6vw,3.1rem);margin-top:14px}
+  .page-head .lead{margin-top:18px}
+
+  /* generic card tightening */
+  .why-grid,.products,.bento,.stats,.team{margin-top:36px}
+  .why-grid{gap:16px}
+  .why-card{padding:26px 22px}
+  .why-card h3{font-size:1.25rem}
+  .products{gap:16px}
+  .product{padding:26px 22px}
+  .product h3{font-size:1.4rem}
+  .bento{gap:14px}
+  .cell{padding:24px 22px}
+  .cell.big .huge{font-size:clamp(2.2rem,9vw,3rem)}
+  .stat{padding:24px 16px}
+  .stat .d{font-size:.82rem}
+
+  /* smart-products tabs + panel */
+  .prod-tabs{margin-top:30px;gap:4px;padding:5px;border-radius:18px}
+  .prod-tab{padding:10px 15px;font-size:.8rem}
+  .prod-stage{margin-top:30px}
+  .prod-name{font-size:clamp(2rem,12vw,3.2rem);margin:12px 0 26px}
+  .prod-cols{gap:16px}
+  .prod-card{padding:24px 22px}
+  .prod-card p,.prod-card .feat li{font-size:.94rem}
+
+  /* coverflow: taller card + smaller text so copy never spills */
+  .coverflow{height:466px}
+  .cf-card{height:424px;overflow:hidden}
+  .cf-face{padding:30px 22px}
+  .cf-card .aic{width:54px;height:54px;font-size:1.5rem;margin-bottom:14px}
+  .cf-card h4{font-size:1.4rem;margin:14px 0 10px}
+  .cf-card p{font-size:.85rem;line-height:1.5}
+
+  /* CTA */
+  .cta{padding:78px 0}
+  .cta h2{font-size:clamp(2rem,8.4vw,3rem)}
+  .cta .hero-actions .btn{flex:1 1 100%}
+
+  /* footer: brand on its own row, links in two columns */
+  .foot-grid{grid-template-columns:1fr 1fr;gap:30px 20px}
+  .foot-brand{grid-column:1 / -1}
+  .foot-brand p{max-width:none}
+  .foot-bottom{justify-content:center;text-align:center;margin-top:42px}
+}
+
+/* small phones */
+@media(max-width:480px){
+  .wrap{padding:0 16px}
+  .hero{padding:124px 0 56px}
+  h1.hero-title{font-size:1.9rem}
+  .eyebrow{font-size:.68rem;letter-spacing:.1em;padding:8px 14px}
+  .hero-sub{font-size:.98rem}
+  .hero-rating{flex-direction:column;gap:8px;margin-top:30px;text-align:center}
+  .btn{padding:15px 22px}
+
+  .stats{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr;gap:26px}
+  .foot-brand{grid-column:auto}
+
+  .logo-tile{width:150px;height:94px;padding:14px 18px}
+  .logo-tile img{max-height:54px}
+
+  /* coverflow a touch narrower so side cards peek in */
+  .cf-card{width:248px;margin-left:-124px}
+}
